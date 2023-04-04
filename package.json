@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/esraadiller/Automated-Software-testing-with-Cypress#readme",
   "dependencies": {
-    "cypress": "^9.7.0",
+    "cypress": "^12.8.1",
     "prettier": "^2.8.5"
   }
 }

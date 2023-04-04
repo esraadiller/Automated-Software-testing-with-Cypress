@@ -10,7 +10,5 @@ describe('Login with Fixtures Data', () => {
             cy.get('#user_password').type(password)
             cy.contains('Sign in').click()
         })
-
-        
     })
 })

@@ -1,4 +1,4 @@
-describe('wirking with inputs', () => {
+describe('working with inputs', () => {
     it('should fill username', () => {
         //TODO
     })

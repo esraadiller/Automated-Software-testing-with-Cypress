@@ -1,6 +1,0 @@
-;FFMETADATA1
-[CHAPTER]
-TIMEBASE=1/1000
-START=144
-END=2584
-title=Keyboard press simulation should submit searchbox with pressing enter

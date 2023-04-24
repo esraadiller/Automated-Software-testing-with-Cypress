@@ -10,6 +10,7 @@ class BasePage {
 
 class HomePage extends BasePage {
     static scrollToBottom() {
+        cy.visit('https://devexpress.github.io/testcafe/example/')
         cy.get('#submit-button').scrollIntoView()
     }
 
@@ -31,7 +32,7 @@ describe('Abstraction with Classes' , () => {
         // test clean up
         //clean cookies or localStorage
     })
-    
+
     beforeEach(function(){
         //runs before each it block i the describe
     })
@@ -39,22 +40,18 @@ describe('Abstraction with Classes' , () => {
     afterEach(function(){
         // runs after each it block in the describe
     })
-
-    it('should scroll down and up on the page', () => {
     
-        HomePage.loadHomePage()
+    it.skip('1st IT', () =>{
         HomePage.scrollToBottom()
         HomePage.wait(5000)
         HomePage.scrToTop()
         HomePage.wait(3000)
+    })
 
-
-
-
-
-        // cy.wait(5000)
-        // cy.get('#submit-button').scrollIntoView()
-        // cy.wait(5000)
-        // cy.get('header').scrollIntoView()
+    it('2nd IT', () =>{
+        HomePage.scrollToBottom()
+        HomePage.wait(5000)
+        HomePage.scrToTop()
+        HomePage.wait(3000)
     })
 })
